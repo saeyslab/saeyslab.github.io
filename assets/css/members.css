@@ -1,0 +1,12 @@
+.member-photo {
+  border: solid lightgray 1px;
+  max-width: 80%; }
+
+.about-me {
+  text-align: justify; }
+  .about-me h1 {
+    font-size: 1.9em; }
+  .about-me h2 {
+    font-size: 1.6em; }
+  .about-me h3 {
+    font-size: 1.3em; }

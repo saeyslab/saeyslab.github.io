@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Joris Roels - Data Mining and Modelling for Biomedicine</title>
+  <meta name="description" content="I am a PhD student working at: [Ghent University] - [TELIN] - [IPI] [Flanders Institute for Biotechnology] - [IRC] - [DAMBI]">
+
+  
+  
+
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+  
+     
+        <link rel="stylesheet" href="http://localhost:4000/assets/css/members.css" media="screen" type="text/css">
+     
+  
+
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/assets/img/favicon.ico" type="image/x-icon"/>
+
+  <link rel="canonical" href="http://localhost:4000/members/joris-roels/">
+  <link rel="alternate" type="application/rss+xml" title="Data Mining and Modelling for Biomedicine" href="http://localhost:4000/feed.xml">
+</head>
+
+
+   <body>
+
+      <nav class="navbar navbar-default">
+   <div class="container-fluid">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	    <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	 </button>
+         <a class="navbar-brand" href="http://localhost:4000">
+            <img src="http://localhost:4000/assets/img/dambi-logo-small.png" alt="brand/logo">
+         </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+	 <ul class="nav navbar-nav">
+            
+               
+                  <li><a href="http://localhost:4000/members/">
+                     Members
+                  </a></li>
+               
+            
+               
+                  <li><a href="http://localhost:4000/tools/">
+                     Tools
+                  </a></li>
+               
+            
+               
+                  <li><a href="http://localhost:4000/publications/">
+                     Publications
+                  </a></li>
+               
+            
+	 </ul>
+
+	 <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://localhost:4000/contact/">Contact</a></li>
+	 </ul>
+
+      </div><!-- /.navbar-collapse -->
+
+   </div><!-- /.container-fluid -->
+</nav>
+
+
+      <div class="container" aria-label="Content">
+         <div class="main">
+            <div class="row">
+   <div class="col-md-12">
+      <h1 class="main-title">
+         <a href="http://localhost:4000/members/" title="Back to members overview">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+         </a>
+         Joris Roels
+         <small>
+            <span class="label label-primary pull-right">phd. student</span>
+         </small>
+      </h1>
+   </div>
+</div>
+
+<div class="row">
+
+   <div class="col-md-4">
+      <div class="row">
+         <div class="col-xs-12">
+            <img src="http://localhost:4000/assets/img/members/placeholder.jpg"
+                 class="img-responsive center-block img-rounded member-photo"
+                 alt="placeholder.jpg"
+            >
+         </div>
+      </div>
+   </div>
+
+   <div class="col-md-8 about-me"><p>I am a PhD student working at:</p>
+<ul>
+  <li><a href="http://www.ugent.be/en">Ghent University</a> - <a href="http://telin.ugent.be/telin/">TELIN</a> - <a href="http://ipi.ugent.be/ipi/drupal/">IPI</a></li>
+  <li><a href="http://www.vib.be/en/Pages/default.aspx">Flanders Institute for Biotechnology</a> - <a href="http://www.irc.ugent.be/">IRC</a> - <a href="http://www.dambi.ugent.be/">DAMBI</a></li>
+</ul>
+
+<h1 id="research">Research</h1>
+<p>The overall objective of my research is to develop 3D segmentation techniques and automate Electron Microscopy (EM) image processing as much as possible. Currently used algorithms require more ergonomics, higher computational performance and better segmentation quality, even with degraded input images. The goal is to compute a qualitative segmentation of 3D EM data sets where manual work of a single data set is limited to hours instead of months. This manual work is intended especially for training the parameters for a new application or dataset and solve a limited number of remaining problems by post-processing. This allows much more samples to be analyzed than before using the same equipment and the same manpower.</p>
+<h2 id="d-electron-microscopy-em">3D Electron Microscopy (EM)</h2>
+<p>3D EM is a state-of-the-art image acquisition technique aiming to capture ultrastructural cell content at high resolution. Within the context of my research, I am analyzing image artifacts, introduced by 3D EM and developing techniques to remove them, whenever they cannot be avoided at acquisition level. More specifically, I am working on Serial Block-Face Scanning Electron Microscopy (SBF-SEM) data acquired from the state-of-the-art Zeiss Merlin SEM that is equipped with the Gatan 3View SBF detector.</p>
+
+<p><img src="http://telin.ugent.be/~jbroels/img/merlin.png" alt="alternate text" /></p>
+<iframe src="https://www.youtube.com/embed/3yk3rbgu49o" frameborder="0" allowfullscreen=""></iframe>
+
+<h2 id="image-restoration">Image Restoration</h2>
+<p>Noise and blur are significant artifacts in 3D EM. I am working on denoising and deconvolution algorithms in order to reduce their impact on post-processing image analysis. This is done within a probabilistic, regularized framework.</p>
+
+<iframe src="https://www.youtube.com/embed/GGKfma2H2Fw" frameborder="0" allowfullscreen=""></iframe>
+
+<h2 id="image-segmentation">Image Segmentation</h2>
+<p>A crucial initial step in microscopy image analysis is segmentation. More particular, biological experts are currently researching mitochondria and endoplasmatic reticulum in order to fully understand e.g. Parkinson’s disease, Alzheimer, etc. Because segmentation of these structures is very time-consuming and tedious work, I am developing automatic superpixel-based segmentation algorithms for these applications.</p>
+
+<p>Video: https://www.youtube.com/embed/8YCjLdDFNGY</p>
+
+<h1 id="education">Education</h1>
+<h2 id="image-processing-prof-wilfried-philips---prof-bart-goossens">Image Processing (Prof. Wilfried Philips - Prof. Bart Goossens)</h2>
+<p>This course is an introductory course and presents an overview of image processing techniques and applications, rather than a detailed mathematical description and technical details of the algorithms.</p>
+
+<h2 id="artificial-intelligence-prof-aleksandra-pizurica">Artificial Intelligence (Prof. Aleksandra Pizurica)</h2>
+<p>The course gives an overview of the principles and modern approaches in artificial intelligence. The focus is on intelligent agents, reasoning under uncertainty, and making rational decisions.</p>
+
+<h1 id="publications">Publications</h1>
+<p>Embed publication list: https://biblio.ugent.be/person/000090590118?embed=1</p>
+
+<h1 id="contact">Contact</h1>
+<p>During the weekdays, you can find me in the Technicum building in Ghent, except for Fridays, when I am at the VIB research building in Zwijnaarde.</p>
+
+<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDB8uzFxzf7vSRzBwKCBIbw2DXxsIyzAlo&amp;q=Technicum+-+Block+3,+Sint-Pietersnieuwstraat+41,+9000+Gent" frameborder="0"></iframe>
+
+<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDB8uzFxzf7vSRzBwKCBIbw2DXxsIyzAlo&amp;q=Site+Zwijnaarde+-+Onderzoek" frameborder="0"></iframe>
+
+<ul>
+  <li><a href="mailto:Joris.Roels@telin.ugent.be">E-mail</a></li>
+  <li>Phone: +32 9 264 3270</li>
+  <li><a href="http://telin.ugent.be/~jbroels/">Personal Website</a></li>
+</ul>
+
+</div>
+</div>
+
+         </div>
+      </div>
+
+      <footer>
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <ul class="nav nav-justified">
+               
+                  
+                     <li><a href="http://localhost:4000/members/">
+                        Members
+                     </a></li>
+                  
+               
+                  
+                     <li><a href="http://localhost:4000/tools/">
+                        Tools
+                     </a></li>
+                  
+               
+                  
+                     <li><a href="http://localhost:4000/publications/">
+                        Publications
+                     </a></li>
+                  
+               
+            </ul>
+         </div>
+      </div>
+   </div>
+</footer>
+
+
+   </body>
+
+</html>
