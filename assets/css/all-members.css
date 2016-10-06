@@ -1,21 +1,33 @@
 .members-tree--wrap {
-  position: sticky;
-  top: 1em; }
+  position: sticky; }
 
 .members-tree-list {
   margin: 0;
   padding: 0;
-  padding-right: 1em; }
+  padding-right: 2em; }
   .members-tree-list > li {
     list-style-type: none; }
     .members-tree-list > li > a {
-      background: #C7313C;
+      background: #ae4a51;
       display: block;
       color: white;
       font-weight: bolder;
       padding: 3px 1em;
       margin: 1em 0 0.5em 0;
       border-radius: 5px; }
+    .members-tree-list > li:first-child > a {
+      margin-top: 0; }
+
+h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+  font-style: italic;
+  border-bottom: solid lightgray 1px;
+  border-bottom: dashed lightgray 1px;
+  padding: 3px 1em;
+  margin: 0;
+  color: darkgray;
+  margin-bottom: 1em; }
 
 #group-leader {
   margin-top: 0; }
