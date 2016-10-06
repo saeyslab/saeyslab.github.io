@@ -1,5 +1,6 @@
 .members-tree--wrap {
-  position: sticky; }
+  position: sticky;
+  top: 1em; }
 
 .members-tree-list {
   margin: 0;
