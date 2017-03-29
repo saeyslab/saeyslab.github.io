@@ -3359,24 +3359,27 @@ a.label:hover, a.label:focus {
   .navbar .navbar-collapse li a {
     padding: 17px 1.5em; } }
 
-.main {
-  border: solid lightgray 1px;
-  padding: 30px;
+body {
+  background: #f0f0f0; }
+
+.page-title {
+  padding: 0 1em;
+  margin-bottom: 2em;
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 5px lightgray; }
-  .main .main-title {
-    background: #C7313C;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    color: white;
-    margin: -30px;
-    margin-bottom: 30px;
-    padding: 0;
-    padding: 20px 25px; }
-    .main .main-title .glyphicon-chevron-left {
-      opacity: 0.5;
-      font-size: smaller; }
+  border: solid #ddd 1px;
+  position: relative; }
+  .page-title a, .page-title h1 {
+    display: inline-block;
+    vertical-align: middle; }
+  .page-title a {
+    height: 100%;
+    min-height: 100%;
+    height: inherit;
+    position: relative; }
+  .page-title h1 {
+    margin: 0;
+    margin-left: 0.3em;
+    padding: 0.3em 0.5em; }
 
 footer {
   margin-top: 25px; }

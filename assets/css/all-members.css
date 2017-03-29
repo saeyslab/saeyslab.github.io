@@ -1,32 +1,35 @@
 .members-tree--wrap {
   position: sticky;
-  top: 1em; }
+  top: 2em;
+  margin-bottom: 2em;
+  overflow: auto; }
+  @media (max-width: 992px) {
+    .members-tree--wrap {
+      position: static; } }
 
 .members-tree-list {
-  margin: 0;
-  padding: 0;
-  padding-right: 2em; }
+  margin-top: 2em;
+  padding: 0; }
   .members-tree-list > li {
     list-style-type: none; }
     .members-tree-list > li > a {
-      background: #ae4a51;
       display: block;
-      color: white;
+      color: #ae4a51;
       font-weight: bolder;
-      padding: 3px 1em;
-      margin: 1em 0 0.5em 0;
-      border-radius: 5px; }
+      margin: 1.5em 0 .25em 0;
+      padding-left: 0em;
+      max-width: 80%; }
+      @media (max-width: 992px) {
+        .members-tree-list > li > a {
+          max-width: 100%; } }
     .members-tree-list > li:first-child > a {
       margin-top: 0; }
 
-h2 {
+legend {
   font-size: 1.3em;
   font-weight: bold;
   font-style: italic;
-  border-bottom: solid lightgray 1px;
-  border-bottom: dashed lightgray 1px;
   padding: 3px 1em;
-  margin: 0;
   color: darkgray;
   margin-bottom: 1em; }
 
@@ -34,26 +37,54 @@ h2 {
   margin-top: 0; }
 
 .member-wrap {
-  border: solid lightgray 1px;
-  padding: 1em;
-  border-radius: 10px;
+  position: relative;
+  background: white;
+  border-radius: 3px;
+  border: solid #ddd 1px;
+  box-shadow: 0 0 10px #ddd;
   color: black;
   display: block;
-  margin-bottom: 25px; }
-  .member-wrap:hover {
+  margin-bottom: 2.5em;
+  padding: 1.5em;
+  transition: 0.3s; }
+  .member-wrap:hover, .member-wrap:visited, .member-wrap:active {
     text-decoration: none;
     color: black;
     cursor: pointer;
-    border-color: #472A5D; }
-
-.thumbnail img {
-  height: 150px; }
-
-h3 {
-  text-align: center; }
-
-.excerpt {
-  max-height: 80px;
-  opacity: 0.4;
-  overflow: hidden;
-  text-align: justify; }
+    transform: scale(1.02);
+    box-shadow: 0 0 5px steelblue;
+    border-color: transparent; }
+  .member-wrap .thumbnail img {
+    height: 150px; }
+  .member-wrap h3 {
+    text-align: center;
+    color: #472A5D; }
+  .member-wrap .excerpt {
+    height: 120px;
+    max-height: 120px;
+    overflow: hidden;
+    color: gray;
+    position: relative;
+    text-align: justify;
+    font-size: 0.9em; }
+  .member-wrap .ellipsis {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    margin: 0;
+    color: steelblue;
+    font-size: 20px;
+    padding-top: 2em;
+    background: white;
+    background: rgba(255, 255, 255, 0.5);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+75 */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 65%, white 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 65%, white 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 65%, white 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+    /* IE6-9 */ }
