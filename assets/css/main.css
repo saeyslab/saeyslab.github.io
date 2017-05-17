@@ -1082,10 +1082,10 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #337ab7;
+  color: #3abbba;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #23527c;
+    color: #288180;
     text-decoration: underline; }
   a:focus {
     outline: 5px auto -webkit-focus-ring-color;
@@ -2598,7 +2598,7 @@ select[multiple].input-lg {
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #eeeeee;
-    border-color: #337ab7; }
+    border-color: #3abbba; }
   .nav .nav-divider {
     height: 1px;
     margin: 9px 0;
@@ -3351,35 +3351,62 @@ a.label:hover, a.label:focus {
 @media print {
   .hidden-print {
     display: none !important; } }
-.navbar .navbar-brand {
-  height: auto; }
-  .navbar .navbar-brand img {
-    margin: -15px; }
-@media (min-width: 992px) {
+.navbar {
+  border-radius: 0;
+  box-shadow: 0 0 10px 0px grey; }
+  .navbar .navbar-brand {
+    height: auto; }
+    .navbar .navbar-brand img {
+      margin: -15px; }
   .navbar .navbar-collapse li a {
-    padding: 17px 1.5em; } }
+    color: #ff681e;
+    font-weight: bolder; }
+    .navbar .navbar-collapse li a:hover {
+      color: #ea4d00; }
+  @media (min-width: 992px) {
+    .navbar .navbar-collapse li a {
+      padding: 17px 1.5em; } }
 
 body {
-  background: #f0f0f0; }
+  background: #fafafa; }
+
+.header {
+  font-family: "Inconsolata";
+  font-weight: 900;
+  background: #253355;
+  color: white;
+  margin-bottom: 3em; }
 
 .page-title {
-  padding: 0 1em;
-  margin-bottom: 2em;
-  background: white;
-  border: solid #ddd 1px;
-  position: relative; }
-  .page-title a, .page-title h1 {
-    display: inline-block;
-    vertical-align: middle; }
-  .page-title a {
-    height: 100%;
-    min-height: 100%;
-    height: inherit;
-    position: relative; }
+  padding: 2em 1em;
+  position: relative;
+  text-align: center; }
+  .page-title h1 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; }
+  .page-title small {
+    display: block;
+    width: 100%;
+    font-variant: normal;
+    font-size: 0.5em;
+    position: absolute;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    color: #ddd;
+    font-style: italic; }
+  .page-title .back {
+    position: absolute;
+    left: -2em; }
   .page-title h1 {
     margin: 0;
     margin-left: 0.3em;
     padding: 0.3em 0.5em; }
+
+.main {
+  border: solid #ddd 1px;
+  background: white;
+  padding: 1em;
+  box-shadow: 0 0 10px gray; }
 
 footer {
   margin-top: 25px; }

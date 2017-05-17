@@ -2,6 +2,15 @@
   border: solid lightgray 1px;
   max-width: 80%; }
 
+.members--title-wrap {
+  background: #1b2944;
+  margin: -1em;
+  margin-bottom: 1em;
+  padding: 1em;
+  color: white; }
+  .members--title-wrap .label {
+    background: #3abbba; }
+
 .about-me {
   text-align: justify; }
   .about-me h1 {

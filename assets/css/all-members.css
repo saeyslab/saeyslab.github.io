@@ -43,17 +43,39 @@ legend {
   border: solid #ddd 1px;
   box-shadow: 0 0 10px #ddd;
   color: black;
-  display: block;
+  padding: 0;
   margin-bottom: 2.5em;
-  padding: 1.5em;
   transition: 0.3s; }
   .member-wrap:hover, .member-wrap:visited, .member-wrap:active {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
     transform: scale(1.02);
     box-shadow: 0 0 5px steelblue;
     border-color: transparent; }
+  .member-wrap .shortcuts {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .member-wrap .shortcuts a.shortcuts--link {
+      background: #472A5D;
+      border-radius: 2em;
+      padding: 0.3em 0.5em;
+      margin: 0.75em;
+      box-shadow: 0 0 5px gray;
+      transition: 0.3s;
+      opacity: 0.3; }
+      .member-wrap .shortcuts a.shortcuts--link:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 5px steelblue;
+        opacity: 1; }
+      .member-wrap .shortcuts a.shortcuts--link span {
+        color: white; }
+  .member-wrap a {
+    padding: 1.5em;
+    margin: 0;
+    display: block; }
+    .member-wrap a:hover, .member-wrap a:visited, .member-wrap a:active {
+      text-decoration: none;
+      color: black;
+      cursor: pointer; }
   .member-wrap .thumbnail img {
     height: 150px; }
   .member-wrap h3 {
