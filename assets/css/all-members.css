@@ -44,8 +44,8 @@ legend {
   box-shadow: 0 0 10px #ddd;
   color: black;
   padding: 0;
-  margin-bottom: 2.5em;
-  transition: 0.3s; }
+  transition: 0.3s;
+  margin: 1.5em 0.75em; }
   .member-wrap:hover, .member-wrap:visited, .member-wrap:active {
     transform: scale(1.02);
     box-shadow: 0 0 5px steelblue;
@@ -57,7 +57,6 @@ legend {
     .member-wrap .shortcuts a.shortcuts--link {
       background: #472A5D;
       border-radius: 2em;
-      padding: 0.3em 0.5em;
       margin: 0.75em;
       box-shadow: 0 0 5px gray;
       transition: 0.3s;
@@ -69,7 +68,7 @@ legend {
       .member-wrap .shortcuts a.shortcuts--link span {
         color: white; }
   .member-wrap a {
-    padding: 1.5em;
+    padding: 1em;
     margin: 0;
     display: block; }
     .member-wrap a:hover, .member-wrap a:visited, .member-wrap a:active {
@@ -80,7 +79,7 @@ legend {
     height: 150px; }
   .member-wrap h3 {
     text-align: center;
-    color: #472A5D; }
+    color: rgba(0, 0, 0, 0.85); }
   .member-wrap .excerpt {
     height: 120px;
     max-height: 120px;
@@ -110,3 +109,11 @@ legend {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
     /* IE6-9 */ }
+  .member-wrap .label.group-leader {
+    background: #ff681e; }
+  .member-wrap .label.post-doc {
+    background: #3abbba; }
+  .member-wrap .label.phd-student {
+    background: #1b2944; }
+  .member-wrap .label.technician {
+    background: #5a2a82; }
