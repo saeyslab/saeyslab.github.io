@@ -3373,7 +3373,7 @@ body {
 .header {
   font-family: "Inconsolata";
   font-weight: 900;
-  background: #253355;
+  background: #1b2944;
   color: white;
   margin-bottom: 3em; }
 
@@ -3405,7 +3405,11 @@ body {
 .main {
   border: solid #ddd 1px;
   background: white;
-  padding: 1em;
+  box-shadow: 0 0 10px gray; }
+
+.card {
+  border: solid #ddd 1px;
+  background: white;
   box-shadow: 0 0 10px gray; }
 
 footer {

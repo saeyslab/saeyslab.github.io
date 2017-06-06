@@ -56,7 +56,7 @@ pre {
     background: white;
     height: 3em;
     text-align: center; }
-  .search--wrap #search--nr-pubs-visible {
+  .search--wrap .search--nr-pubs-visible--wrap {
     position: absolute;
     right: 1em;
     top: 1.5em; }
@@ -70,12 +70,13 @@ p {
 .publication {
   border: solid #ddd 1px;
   background: white;
-  padding: 1em;
   box-shadow: 0 0 10px gray;
   margin: 1em 0em;
   padding: 0;
   transition: 0.3s;
-  position: relative; }
+  position: relative;
+  z-index: 10;
+  margin-bottom: 2.5em; }
   .publication:hover {
     cursor: pointer;
     box-shadow: 0 0 5px #3abbba; }
@@ -97,14 +98,14 @@ p {
     color: gray;
     font-style: italic;
     text-align: right;
-    text-align: center; }
+    text-align: center;
+    font-size: 0.9em; }
   .publication .publication--meta-wrap {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    flex-wrap: wrap; }
     .publication .publication--meta-wrap li {
       display: block; }
-    .publication .publication--meta-wrap .publication--journal {
-      text-decoration: underline; }
     .publication .publication--meta-wrap .publication--doi {
       padding: 0;
       margin: 0;
@@ -113,17 +114,24 @@ p {
       font-size: small; }
   .publication .publication--tags {
     text-align: right;
-    font-size: 0.9em;
     padding: 0 5px;
     margin: 0;
-    display: absolute;
-    bottom: 0px;
-    height: 3px;
-    overflow: hidden;
-    transition: 0.3s; }
+    margin-top: -3px;
+    text-align: right;
+    font-size: 0.9em;
+    position: absolute;
+    height: 25px;
+    right: 0px;
+    z-index: 0;
+    cursor: default; }
     .publication .publication--tags li {
-      margin: 0 0.2em;
-      border-radius: 0; }
-  .publication:hover .publication--tags {
-    height: 2em;
-    padding: 5px; }
+      display: inline-block;
+      margin: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
+      .publication .publication--tags li.publication--label--topic {
+        background-color: #ff681e; }
+      .publication .publication--tags li.publication--label--author {
+        background-color: #1b2944; }
+      .publication .publication--tags li a {
+        color: white; }
