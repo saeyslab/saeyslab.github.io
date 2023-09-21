@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /software-and-tools/
+Disallow: /members/
+Disallow: /publications/
